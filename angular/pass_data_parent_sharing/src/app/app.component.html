@@ -1,0 +1,8 @@
+<!-- <div>
+  <p><strong>Student name:</strong> {{studentName}}</p> //One-way binding Interpolation from app.component.ts
+  <p><strong>Student age:</strong> {{studentAge}}</p>
+</div> -->
+
+<div>
+  <app-student [name]="studentName" [age]="studentAge"></app-student> //property binding to pass data to student component
+</div>

@@ -1,0 +1,33 @@
+th,td{
+    border:1px solid blueviolet;
+    padding:.6rem;
+}
+td.center{
+    text-align:center;
+    width:70px;
+}
+.high-salary{
+    color:red;
+    font-weight:bold;
+}
+.mid-salary{
+    color:orange;
+    font-weight:bold;
+}
+.low-salary{
+    color:green;
+    font-weight:bold;
+}
+.btn{
+    background-color:blueviolet;
+    color:white;
+    border:none;
+    padding:.4rem 1rem;
+    border-radius:4px;
+    cursor:pointer;
+}
+input{
+    padding: 10px;
+    margin: 20px;
+    border-color: darkblue;
+}

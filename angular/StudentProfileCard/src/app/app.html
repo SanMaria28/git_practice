@@ -1,0 +1,15 @@
+<h1 style ="text-align: center; color: brown;">{{ title() }}</h1>
+
+<h2>
+  Pipes
+</h2>
+<ul>
+  <li>
+    {{name | uppercase}}
+  </li>
+  <li>{{dob | date: 'dd MMMM yyyy' | uppercase}} </li>
+  <li>{{marks | percent}}</li>
+  <li>{{fees | currency:'INR'}}</li>
+  <li>{{bio | slice: 0:25}}</li>
+  <li>{{student | json}} </li>
+</ul>

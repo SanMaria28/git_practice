@@ -1,0 +1,38 @@
+<div>
+    <!-- <h1>Students</h1>
+    <input type="text" placeholder="Enter Name" [(ngModel)]="name" />
+    <input type="number" placeholder="Enter Roll Number" [(ngModel)]="rollNumber" />
+    <input type="text" placeholder="Enter Department" [(ngModel)]="department" />
+    <input type="text" placeholder="Enter College" [(ngModel)]="college" />
+    <input type="text" placeholder="Enter Location" [(ngModel)]="location" /> -->
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll Number</th>
+                <th>Department</th>
+                <th>College</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of students">
+                <td>{{student.name}}</td>
+                <td>{{student.rollNumber}}</td>
+                <td>{{student.department}}</td>
+                <td>{{student.college}}</td>
+                <td>{{student.location}}</td>
+            </tr>
+        </tbody>
+        </table>
+</div>
+<div>
+    <input type="text" placeholder="Enter Name" [(ngModel)]="name" />
+    <p>{{name}}</p>
+</div>
+<div>
+    <button (click)="display()">Click Here</button>
+</div>
+
+

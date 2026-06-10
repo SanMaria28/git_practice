@@ -1,0 +1,35 @@
+body{
+    margin:0;
+    padding: 0;
+
+}
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: bisque;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.card{
+    background-color: sandybrown;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align: center;
+    color: darkslategray;
+}
+
+.grade
+{
+    font-weight: bold;
+    color: white;
+    background-color: darkred;
+    padding: 5px;
+    border-radius: 4px;
+
+}

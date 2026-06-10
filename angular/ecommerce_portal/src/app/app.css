@@ -1,0 +1,36 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+.header
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: darksalmon;
+}
+.logo
+{
+    color:white;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.nav-links a{
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    gap:5px;
+
+}
+
+.content
+{
+    padding:30px;
+    
+}

@@ -1,0 +1,15 @@
+.course-list
+{
+    display:flex;
+    gap:30px;
+
+}
+.course-card
+{
+    background-color: rgb(222, 219, 182);
+    padding: 10px 30px;
+    border-radius: 8px;
+    box-shadow: 0 15px 35px gray;
+    width:30%;
+
+}

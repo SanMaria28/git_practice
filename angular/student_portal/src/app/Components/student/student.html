@@ -1,0 +1,13 @@
+<div class="student-container" *ngIf="student">
+    <div class="student-card">
+        <p><strong>Id: </strong>{{student.id}}</p>
+        <p><strong>Name: </strong>{{student.name}}</p>
+        <p><strong>Age: </strong>{{student.age}}</p>
+        <p><strong>Course: </strong>{{student.course}}</p>
+        <p><strong>Year: </strong>{{student.year}}</p>
+        <p><strong>Email: </strong>{{student.email}}</p>
+    </div>
+</div>
+<div *ngIf="!student" class="not-found">
+    <h2>Student not found.</h2>
+</div>

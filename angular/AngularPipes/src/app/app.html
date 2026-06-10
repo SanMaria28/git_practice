@@ -1,0 +1,65 @@
+<h1 style = "text-align:center; color: crimson; text-transform: uppercase;">{{title()}}</h1>
+
+<hr>
+<!-- BuiltIn Pipes -->
+<h2>Text Pipe</h2>
+<ul>
+  <li>{{name}}</li>
+  <li>{{name | lowercase}}</li>
+  <li>{{name | uppercase}}</li>
+  <li>{{name | titlecase}}</li>
+</ul>
+
+<h2>Date Pipe
+</h2>
+
+<ul>
+  <li>{{today}}</li>
+  <li>{{today | date}}</li>
+  <li>{{today | date:'short'}}</li>
+  <li>{{today | date:'fullDate'}}</li>
+  <li>{{today | date:'dd/MM/yyyy'}}</li>
+  <li>{{today | date:'dd MMMM yyyy'}}</li>
+  <li>{{today | date:'medium'}}</li>
+  <li>{{today | date:'long'}}</li>  
+  <li>{{today | date:'shortTime'}}</li>
+</ul>
+
+<h2>Currency Pipe</h2>
+<ul>
+  <li>{{amount}}</li>
+  <li>{{amount | currency}}</li>
+  <li>{{amount | currency:'INR'}}</li>
+  <li>{{amount | currency:'EUR'}}</li>
+  <li>{{amount | currency:'JPY'}}</li>
+</ul>
+
+<h2>Percent Pipe</h2>
+<ul>
+  <li>{{percentage}}</li> 
+  <li>{{percentage | percent}}</li>
+  <li>{{percentage | percent:'1.2-2'}}</li>
+</ul>
+
+<h2>Slice Pipe</h2>
+<ul>
+  <li>{{text}}</li>
+  <li>{{text | slice:0:21}}</li>
+  <li>{{text | slice:5:10}}</li>
+</ul>
+
+<h2>JSON Pipe</h2>
+<ul>
+  <li>{{student}}</li>
+  <li>{{student | json}}</li>
+</ul>
+
+<h2>Parameter Pipe</h2>
+<ul>
+  <li>{{amount | currency: 'INR' }}</li>
+  </ul>
+
+<h2>Pipe Chaining</h2>
+<ul>
+  <li>{{today | date: 'fullDate' | uppercase}}</li>
+</ul>

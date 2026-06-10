@@ -1,0 +1,39 @@
+.admin-container
+{
+    display:flex;
+    height:400px;
+    overflow:hidden;
+
+}
+
+.admin-sidebar
+{
+    
+    width:300px;
+    background-color: bisque;
+    padding:15px;
+      align-items: center;
+}
+.admin-sidebar h2{
+    color:crimson;
+    margin-bottom:15px;
+    font-size:28px;
+}
+.nav-links a{
+    color:brown;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+  
+}
+.nav-links a:hover {
+    color: darkslategray;
+}
+
+.admin-content
+{
+    flex:1;
+    background-color: whitesmoke;
+    padding:20px;
+
+}

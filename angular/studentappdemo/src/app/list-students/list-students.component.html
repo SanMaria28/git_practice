@@ -1,0 +1,41 @@
+<div>
+    <div>
+        <input type="text" id ="newStudentId" placeholder = "Enter the student Id" [(ngModel)]="newStudentId"/>
+        <br/>
+        <input type="text" id ="newStudentName" placeholder = "Enter the student Name" [(ngModel)]="newStudentName"/>
+        <br/>
+        <input type="text" id ="newStudentAge" placeholder = "Enter the student Age" [(ngModel)]="newStudentAge"/>
+        <br/>
+        <input type="text" id ="newStudentmajor" placeholder = "Enter the student Major" [(ngModel)]="newStudentMajor"/>
+        <br/>
+        <input type="text" id ="newStudentGpa" placeholder = "Enter the student GPA" [(ngModel)]="newStudentGpa"/>
+        <br/>
+        <button (click)="addStudent()" class="btn">Add Student</button>
+    </div>
+    <table style = "border: 5; border-color: brown; border-style: dashed;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Major</th>
+                <th>GPA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of students"
+            [ngStyle]="{
+                'background-color': student.gpa>2.5 ? 'green': 'red'
+            }"
+            >
+                <td>{{student.id}}</td>
+                <td>{{student.name}}</td>
+                <td>{{student.age}}</td>
+                <td>{{student.major}}</td>
+                <td>{{student.gpa}}</td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+</div>

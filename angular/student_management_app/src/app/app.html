@@ -1,0 +1,64 @@
+<div class="container my-5">
+  <!-- Title Section -->
+  <h2 class="text-center text-primary mb-4">{{ title }}</h2>
+
+  <!-- Form Section -->
+   <div class="card p-4 shadow mb-4">
+    <h4 class="mb-4">Student Registration</h4>
+
+    <form #studentForm="ngForm"
+    (ngSubmit)="addStudent(studentForm)">
+
+    <div class="mb-4 row g-3">
+      <div class="col-md-4">
+        <input type="text" class="form-control" name="name" [(ngModel)]="student.name" placeholder="Name" required>
+      </div>
+      <div class="col-md-4">
+      <input type="text" class="form-control" name="email" [(ngModel)]="student.email" placeholder="Email" required>
+      </div>
+      <div class="col-md-4">
+      <select name="course" class="form-select" [(ngModel)]="student.course" required>
+        <option value="">Select Course</option>
+        <option value="Angular">Angular</option>
+        <option value="React">React</option>
+        <option value="Vue">Vue</option>
+        <option value="Node.js">Node.js</option>
+      </select>
+    </div>
+    <div class="md-12">
+      <button class="btn btn-warning w-100" 
+      [disabled]="studentForm.invalid"
+      >Add Student</button>
+    </div>
+    </div>
+   
+    </form>
+
+
+    <!-- Table Section -->
+     <div class="card shadow p-4">
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover tabe-striped align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Course</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let student of students; let i = index">
+              <td>{{ i + 1 }}</td>
+              <td>{{ student.name }}</td>
+              <td>{{ student.email }}</td>
+              <td><span class=" badge bg-primary p-2 text-white">{{ student.course }}</span></td>
+            <td>
+              <button class="btn btn-danger" (click)="deleteStudent(i)">Delete</button>
+            </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+   </div>
+</div>

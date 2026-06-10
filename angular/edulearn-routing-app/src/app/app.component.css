@@ -1,0 +1,41 @@
+body{
+    margin:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+}
+header nav{
+    display:flex;
+    justify-content:space-between;
+    background-color: chocolate;
+    align-items: center;
+    padding: 15px;
+}
+nav ul li a{
+    color:whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav h1{
+    color:wheat;
+    text-transform: uppercase;
+}
+
+.navbar ul
+{
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li{
+    list-style-type: none;
+}
+
+nav ul li a:hover{
+    color:khaki;
+    font-weight: bold;
+}
+
+.content
+{
+    padding: 20px;
+}

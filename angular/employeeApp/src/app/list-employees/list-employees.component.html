@@ -1,0 +1,52 @@
+<div>
+    <div>
+        <input type="text" id ="newEmployeeId" placeholder = "Enter the Employee Id" [(ngModel)]="newEmployeeId"/>
+        <br/>
+        <input type="text" id ="newEmployeeFName" placeholder = "Enter the Employee First Name" [(ngModel)]="newEmployeeFName"/>
+        <br/>
+        <input type="text" id ="newEmployeeLName" placeholder = "Enter the Employee Last Name" [(ngModel)]="newEmployeeLName"/>
+        <br/> 
+        <input type="text" id ="newEmployeeDoj" placeholder = "Enter the Employee Date of Joining" [(ngModel)]="newEmployeeDoj"/>
+        <br/>
+        <input type="text" id ="newEmployeeSalary" placeholder = "Enter the Employee Salary" [(ngModel)]="newEmployeeSalary"/>
+        <br/>
+        <button (click)="addEmployee()" class="btn">Add Employee</button>
+    </div>
+    <br/>
+    <br/>
+    <table>
+         <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Date of Joining</th>
+                <th>Salary</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees"
+            [ngClass]="{
+                'high-salary':employee.salary>50000,
+                'mid-salary':employee.salary>30000 && employee.salary<=50000,
+                'low-salary':employee.salary<=30000
+            }"
+            [ngStyle]="
+            {
+                'font-weight': employee.salary>50000 ? 'bold' : 'normal'
+            }"
+            >
+                <td>{{employee.id | number}}</td>
+                <td>{{employee.fname | titlecase}}</td>
+                <td>{{employee.lname | titlecase}}</td>
+        
+                <td>{{employee.doj | date:'yyyy-MM-dd'}}</td>
+                <td>{{employee.salary | currency}}</td>
+                <td><button (click)="edit(employee.salary)" class="btn">Edit</button></td>
+                <td><button (click)="deleteEmp(employee.id)" class="btn">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

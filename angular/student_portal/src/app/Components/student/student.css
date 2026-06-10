@@ -1,0 +1,14 @@
+.student-card
+{
+    background-color: white;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    width:500px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin:auto;
+}
+.student-card p{
+    font-size: 28px;
+}

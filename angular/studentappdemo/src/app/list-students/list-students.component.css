@@ -1,0 +1,36 @@
+th{
+color:crimson;
+text-align: center;
+font-size: larger;
+}
+td{
+    color:yellow;
+    text-align: center;
+    font: size 50ch;
+}
+table{
+    border: 5px;
+    border-color: darkslategrey;
+    margin:20px;
+}
+input{
+    padding: 10px;
+    margin: 20px;
+    border-color: darkblue;
+}
+button
+{
+    background-color: maroon;
+    color: wheat;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:150%;
+}
+th, td {
+    border: 1px solid brown;
+    padding: .6rem;
+}
+

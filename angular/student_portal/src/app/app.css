@@ -1,0 +1,48 @@
+*
+{
+    margin:0;
+    padding:0;
+    background-color: #f2f4f6;
+    box-sizing:border-box;
+    font-size:22px;
+
+}
+.header
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background: whitesmoke;
+}
+
+.nav-links ul
+{
+  
+    list-style: none;
+    display:flex;
+    gap:40px;
+    
+}
+
+.nav-links a{
+    text-decoration: none;
+    color:#4CAF50;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header h2{
+    color: #4CAF50;
+    font-size:30px;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover{
+    color: #042c06;
+}
+
+.content{
+    padding: 20px;
+    border:15px;
+}

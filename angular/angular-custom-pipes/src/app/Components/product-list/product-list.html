@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>Ecommerce Discount Formatter</h1>
+
+    <div class="card" *ngFor ="let product of products">
+       <p class="pname">
+        Product Name: {{product.name}} 
+       </p>
+       <p>
+        Original Price: {{product.price | currency: 'INR'}}  
+        </p>
+        <p>
+          Discount: {{product.discount | percent}}
+        </p>
+        <p class="final">
+            Final Price: {{product.price | finalPrice: product.discount | currency: 'INR'}}
+        </p>
+
+        <span class="badge">
+            {{product.discount | discountBadge}}
+        </span>
+    </div>
+</div>

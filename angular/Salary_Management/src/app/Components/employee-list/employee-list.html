@@ -1,0 +1,25 @@
+<div class="container">
+    <h1>Employee Salary Management</h1>
+
+    <div class="card" *ngFor="let employee of employees">
+        <p>
+            Name: {{ employee.name }}
+        </p>
+        <p>
+            Position: {{ employee.position }}
+        </p>
+        <p>
+            Basic Salary: {{ employee.basicSalary | currency:'INR' }}
+        </p>
+        <p>
+            Bonus: {{employee.bonus | percent }}
+        </p>
+        <p>
+            Final Salary: {{ employee.basicSalary | finalSalary:employee.bonus | currency:'INR' }}
+        </p>
+
+        <span class="grade">
+            Salary Grade: {{ employee.basicSalary | finalSalary:employee.bonus | salaryGrade }}
+        </span>        
+    </div>
+</div>

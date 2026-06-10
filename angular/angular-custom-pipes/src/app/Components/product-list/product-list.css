@@ -1,0 +1,43 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    min-height: 100vh;
+    background-color: #f2f5f9;
+    padding:30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card
+{
+    background-color: thistle;
+    font-size: 20px;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    padding-bottom: 30px;
+}
+
+.badge
+{
+    background-color: #ff4d4d;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.pname
+{
+    font-weight: bold;
+    font-size: 24px;
+    color: darkslategray;
+
+}
+h1{
+    text-align: center;
+    color: darkslategray;
+    font-size: 30px;
+    text-shadow: 5px 5px 10px lightgray;
+}
